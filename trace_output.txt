@@ -1,0 +1,30 @@
+
+======================================================================
+USER GOAL: I'm thinking of buying two more of order A1001. What would those two cost, and is the original still under warranty?
+======================================================================
+
+[TOOL CALL] lookup_order({'order_id': 'A1001'})
+[TOOL RESULT] lookup_order -> {'order_id': 'A1001', 'item': 'laptop', 'price': 1200, 'purchased': '2026-05-20', 'warranty_months': 12}
+[TOOL CALL] calculate({'expression': '1200 * 2'})
+[TOOL RESULT] calculate -> {'result': 2400}
+
+----------------------------------------------------------------------
+FINAL ANSWER:
+Two more laptops (order A1001) would cost $2,400.
+
+Regarding the warranty, the original order was purchased on 2026-05-20 and came with a 12-month warranty, meaning it expired on 2027-05-20. As today's date is 2027-07-29, the original order is no longer under warranty.
+----------------------------------------------------------------------
+
+
+======================================================================
+USER GOAL: Can you tell me about order A9999 and whether it's still under warranty?
+======================================================================
+
+[TOOL CALL] lookup_order({'order_id': 'A9999'})
+[TOOL RESULT] lookup_order -> {'error': 'Order A9999 was not found.'}
+
+----------------------------------------------------------------------
+FINAL ANSWER:
+I'm sorry, but I could not find an order with the ID A9999.
+----------------------------------------------------------------------
+
